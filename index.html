@@ -1,0 +1,43 @@
+<html>
+  <style>
+    .contact {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      max-width: 60%;
+      padding: 0;
+      margin: auto;
+    }
+    .card {
+      padding: 40px;
+      background: #fff;
+      border-radius: 20px;
+      margin: 60px auto;
+      box-shadow: 0 7px 30px -10px #96aab480;
+    }
+    #legal-agreement {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    #legal-agreement input[type="checkbox"] {
+      transform: scale(1.5);
+      margin-right: 25px;
+    }
+  </style>
+<body>
+  <form id='ContactForm' class='isolate contact'>
+    <div id="serviceForm" class="card">
+      <div class="more-margin subtitle--small" id="legal-agreement">
+        <input aria-required="true" id="legal" name="legal_consent" required title="Agree to terms and license"
+          type="checkbox" value="consented">
+        <label for="legal">
+          <p>Dorvie protects your personal information in accordance with our <a href="policies/privacy-policy.pdf"
+              target=_blank title=Privacy Policy>Privacy Policy</a>, and delivers services to you in accordance
+            with our <a href="policies/terms-of-service.pdf" target="_blank" title="Terms of Service">Terms of
+              Service</a>. By checking the box, you acknowledge that you have read and accept those terms.</p>
+        </label>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
